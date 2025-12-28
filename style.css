@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0e0e11;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a22, #0e0e11);
+  padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-top: 5rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-content h2 span {
+  color: #7c7cff;
+}
+
+.hero-content p {
+  margin: 1.5rem 0;
+  color: #cfcfcf;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section.dark {
+  background: #141418;
+  border-radius: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1c1c25;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  border: 1px solid #7c7cff;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #7c7cff;
+  color: #0e0e11;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: transparent;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+}
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;              /* 🔥 evita que se encimen */
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;   /* 🔥 evita saltos raros */
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #5ee7df, #38bdf8);
+  color: #000;
+}
+
+.btn.secondary {
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
